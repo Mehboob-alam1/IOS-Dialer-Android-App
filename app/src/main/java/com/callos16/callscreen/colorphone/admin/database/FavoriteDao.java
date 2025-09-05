@@ -1,8 +1,10 @@
-package com.easyranktools.callhistoryforanynumber.database;
+package com.callos16.callscreen.colorphone.admin.database;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
+
+import com.callos16.callscreen.colorphone.admin.database.Favorite;
 
 import java.util.List;
 

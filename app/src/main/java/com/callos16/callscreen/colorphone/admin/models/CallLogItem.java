@@ -1,5 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.models;
-
+package com.callos16.callscreen.colorphone.admin.models;
 
 public class CallLogItem {
     private String nameOrNumber;

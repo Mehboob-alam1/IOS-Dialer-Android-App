@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.fragment;
+package com.callos16.callscreen.colorphone.admin.fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -16,12 +16,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.callos16.callscreen.colorphone.R;
+import com.callos16.callscreen.colorphone.databinding.FragmentCallHisAddtoContactBinding;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
-import com.callos16.callscreen.colorphone.admin.R;
 import com.callos16.callscreen.colorphone.admin.database.AppDatabase;
 import com.callos16.callscreen.colorphone.admin.database.Favorite;
 import com.callos16.callscreen.colorphone.admin.database.User;
-import com.callos16.callscreen.colorphone.admin.databinding.FragmentCallHisAddtoContactBinding;
 
 import java.util.Arrays;
 import java.util.List;

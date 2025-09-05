@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.fragment;
+package com.callos16.callscreen.colorphone.admin.fragment;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -12,11 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.callos16.callscreen.colorphone.R;
+import com.callos16.callscreen.colorphone.databinding.FragmentCallHisHomeDataBinding;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
-import com.callos16.callscreen.colorphone.admin.R;
 import com.callos16.callscreen.colorphone.admin.adapters.CallHis_AdapterOrganicPage;
-import com.callos16.callscreen.colorphone.admin.databinding.FragmentCallHisHomeDataBinding;
 
 
 public class CallHis_FragmentHomeData extends Fragment {

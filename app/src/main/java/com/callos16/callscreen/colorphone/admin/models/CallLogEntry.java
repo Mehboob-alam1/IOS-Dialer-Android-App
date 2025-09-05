@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.models;
+package com.callos16.callscreen.colorphone.admin.models;
 
 public class CallLogEntry {
     private String name;

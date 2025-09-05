@@ -3,13 +3,13 @@ package com.callos16.callscreen.colorphone.admin;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.callos16.callscreen.colorphone.admin.databinding.ActivityStartBinding;
+import com.callos16.callscreen.colorphone.R;
+import com.callos16.callscreen.colorphone.databinding.ActivityStartBinding;
 
 
 public class CallHis_ActivityStart extends AppCompatActivity {
@@ -19,7 +19,6 @@ public class CallHis_ActivityStart extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
 
         binding = ActivityStartBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

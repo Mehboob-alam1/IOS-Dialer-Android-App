@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.fragment;
+package com.callos16.callscreen.colorphone.admin.fragment;
 
 import android.Manifest;
 import android.content.Intent;
@@ -20,9 +20,9 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.callos16.callscreen.colorphone.R;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
-import com.callos16.callscreen.colorphone.admin.R;
 import com.callos16.callscreen.colorphone.admin.adapters.CallLogAdapter;
 import com.callos16.callscreen.colorphone.admin.models.CallLogEntry;
 

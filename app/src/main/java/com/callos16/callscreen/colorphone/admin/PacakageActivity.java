@@ -11,12 +11,13 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.callos16.callscreen.colorphone.R;
+import com.callos16.callscreen.colorphone.admin.models.AdminModel;
 import com.cashfree.pg.api.CFPaymentGatewayService;
 import com.cashfree.pg.core.api.CFSession;
 import com.cashfree.pg.core.api.callback.CFCheckoutResponseCallback;
@@ -61,7 +62,7 @@ public class PacakageActivity extends AppCompatActivity implements CFCheckoutRes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+       // EdgeToEdge.enable(this);
         setContentView(R.layout.activity_pacakage);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -170,7 +171,7 @@ public class PacakageActivity extends AppCompatActivity implements CFCheckoutRes
             String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
             setLoading(btnRestore, true);
             MyApplication.getInstance().loadAdminData(uid, new MyApplication.OnAdminLoadedListener() {
-                @Override public void onAdminLoaded(com.easyranktools.callhistoryforanynumber.models.AdminModel admin) {
+                @Override public void onAdminLoaded(AdminModel admin) {
                     setLoading(btnRestore, false);
                     // update caches
                     hasActivePlan = MyApplication.getInstance().hasActivePlan();

@@ -1,5 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.fragment;
-
+package com.callos16.callscreen.colorphone.admin.fragment;
 
 
 import android.os.Bundle;
@@ -16,9 +15,9 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 
+import com.callos16.callscreen.colorphone.R;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
-import com.callos16.callscreen.colorphone.admin.R;
 import com.callos16.callscreen.colorphone.admin.adapters.CallLogAdapter;
 import com.callos16.callscreen.colorphone.admin.models.CallLogEntry;
 

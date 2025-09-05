@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.fragment;
+package com.callos16.callscreen.colorphone.admin.fragment;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -21,7 +21,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import com.callos16.callscreen.colorphone.admin.adapters.CallHis_AdapterContactList;
 import com.callos16.callscreen.colorphone.admin.database.AppDatabase;
 import com.callos16.callscreen.colorphone.admin.database.User;
-import com.callos16.callscreen.colorphone.admin.databinding.ContactlistFragmentBinding;
+import com.callos16.callscreen.colorphone.databinding.ContactlistFragmentBinding;
 
 import java.util.ArrayList;
 import java.util.List;

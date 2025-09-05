@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.database;
+package com.callos16.callscreen.colorphone.admin.database;
 
 import android.content.Context;
 
@@ -6,7 +6,10 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {User.class,Favorite.class}, version = 2)
+import com.callos16.callscreen.colorphone.admin.database.Favorite;
+import com.callos16.callscreen.colorphone.admin.database.User;
+
+@Database(entities = {User.class, Favorite.class}, version = 2)
 public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase instance;
 

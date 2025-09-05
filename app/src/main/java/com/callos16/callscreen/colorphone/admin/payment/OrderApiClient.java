@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.payment;
+package com.callos16.callscreen.colorphone.admin.payment;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -84,7 +84,7 @@ public class OrderApiClient {
             JSONObject orderRequest = new JSONObject();
             orderRequest.put("order_id", orderId);
             orderRequest.put("order_amount", orderAmount);
-            orderRequest.put("order_currency", com.easyranktools.callhistoryforanynumber.Config.CURRENCY);
+            orderRequest.put("order_currency",Config.CURRENCY);
 
             JSONObject customerDetails = new JSONObject();
             customerDetails.put("customer_id", customerId);

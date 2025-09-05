@@ -1,6 +1,6 @@
-package com.easyranktools.callhistoryforanynumber.models;
+package com.callos16.callscreen.colorphone.admin.models;
 
-import com.callos16.callscreen.colorphone.admin.R;
+import com.callos16.callscreen.colorphone.R;
 
 import java.util.ArrayList;
 

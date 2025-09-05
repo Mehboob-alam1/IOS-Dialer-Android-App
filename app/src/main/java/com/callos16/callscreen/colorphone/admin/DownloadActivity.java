@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -14,10 +13,11 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.callos16.callscreen.colorphone.R;
 import com.callos16.callscreen.colorphone.admin.adapters.CallHis_AdapterlData;
-import com.callos16.callscreen.colorphone.admin.databinding.ActivityDownloadBinding;
 import com.callos16.callscreen.colorphone.admin.models.CallHis_AllData;
 import com.callos16.callscreen.colorphone.admin.models.CallHis_DataModel;
+import com.callos16.callscreen.colorphone.databinding.ActivityDownloadBinding;
 
 import java.util.ArrayList;
 
@@ -30,7 +30,7 @@ public class DownloadActivity extends AppCompatActivity {
         binding = ActivityDownloadBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        EdgeToEdge.enable(this);
+       // EdgeToEdge.enable(this);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

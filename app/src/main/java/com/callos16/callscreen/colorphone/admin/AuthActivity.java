@@ -10,14 +10,14 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.callos16.callscreen.colorphone.R;
+import com.callos16.callscreen.colorphone.admin.models.AdminModel;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.callos16.callscreen.colorphone.admin.models.AdminModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +38,8 @@ public class AuthActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+
+      //  EdgeToEdge.enable(this);
         setContentView(R.layout.activity_auth);
 
         mAuth = FirebaseAuth.getInstance();

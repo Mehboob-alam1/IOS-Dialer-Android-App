@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.adapters;
+package com.callos16.callscreen.colorphone.admin.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.callos16.callscreen.colorphone.admin.R;
+import com.callos16.callscreen.colorphone.R;
 import com.callos16.callscreen.colorphone.admin.models.ChildCallLog;
 
 import java.util.List;

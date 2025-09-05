@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.adapters;
+package com.callos16.callscreen.colorphone.admin.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.callos16.callscreen.colorphone.admin.R;
+import com.callos16.callscreen.colorphone.R;
 import com.callos16.callscreen.colorphone.admin.database.Favorite;
-import com.callos16.callscreen.colorphone.admin.databinding.ItemContactListBinding;
+import com.callos16.callscreen.colorphone.databinding.ItemContactListBinding;
 
 import java.util.List;
 

@@ -1,13 +1,10 @@
-package com.easyranktools.callhistoryforanynumber.adapters;
+package com.callos16.callscreen.colorphone.admin.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.callos16.callscreen.colorphone.admin.fragment.CallHis_ContactsFragment;
-import com.callos16.callscreen.colorphone.admin.fragment.CallHis_EmergencyFragment;
-import com.callos16.callscreen.colorphone.admin.fragment.CallListFragment;
 
 public class CallHis_AdapterOrganicPage extends FragmentStateAdapter {
     public CallHis_AdapterOrganicPage(@NonNull FragmentActivity fragmentActivity) {

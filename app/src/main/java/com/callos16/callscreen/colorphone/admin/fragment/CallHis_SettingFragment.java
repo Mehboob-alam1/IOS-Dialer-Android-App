@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.fragment;
+package com.callos16.callscreen.colorphone.admin.fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -14,13 +14,10 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.callos16.callscreen.colorphone.admin.AdManager;
-import com.callos16.callscreen.colorphone.admin.DefaultDialerHelper;
 import com.callos16.callscreen.colorphone.admin.DownloadHistoryActivity;
-import com.callos16.callscreen.colorphone.admin.PhoneAccountManager;
-import com.callos16.callscreen.colorphone.admin.R;
 import com.callos16.callscreen.colorphone.admin.RemoveAdsActivity;
 import com.callos16.callscreen.colorphone.admin.WebActivity;
-import com.callos16.callscreen.colorphone.admin.databinding.FragmentCallHisSettingBinding;
+import com.callos16.callscreen.colorphone.databinding.FragmentCallHisSettingBinding;
 
 
 public class CallHis_SettingFragment extends Fragment {

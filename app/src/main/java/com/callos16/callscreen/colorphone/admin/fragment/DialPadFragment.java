@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.fragment;
+package com.callos16.callscreen.colorphone.admin.fragment;
 
 import android.Manifest;
 import android.animation.Animator;
@@ -27,12 +27,12 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import com.callos16.callscreen.colorphone.R;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.callos16.callscreen.colorphone.admin.CallManager;
-import com.callos16.callscreen.colorphone.admin.R;
 
 public class DialPadFragment extends Fragment {
     private static final int CALL_PERMISSION_REQUEST_CODE = 101;

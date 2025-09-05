@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.database;
+package com.callos16.callscreen.colorphone.admin.database;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

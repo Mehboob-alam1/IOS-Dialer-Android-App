@@ -4,13 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.callos16.callscreen.colorphone.admin.databinding.ActivityPhoneNumberBinding;
+import com.callos16.callscreen.colorphone.R;
+import com.callos16.callscreen.colorphone.databinding.ActivityPhoneNumberBinding;
 
 
 public class PhoneNumberActivity extends AppCompatActivity {
@@ -24,7 +24,7 @@ public class PhoneNumberActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+        //EdgeToEdge.enable(this);
 
         binding = ActivityPhoneNumberBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.fragment;
+package com.callos16.callscreen.colorphone.admin.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.callos16.callscreen.colorphone.admin.adapters.CallHis_AdapterFavouriteDetails;
 import com.callos16.callscreen.colorphone.admin.database.Favorite;
-import com.callos16.callscreen.colorphone.admin.databinding.EmergencyFragmentBinding;
+import com.callos16.callscreen.colorphone.databinding.EmergencyFragmentBinding;
 
 import java.util.ArrayList;
 import java.util.List;

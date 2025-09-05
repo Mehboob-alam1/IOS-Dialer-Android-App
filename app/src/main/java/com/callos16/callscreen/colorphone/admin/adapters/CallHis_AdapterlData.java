@@ -1,4 +1,4 @@
-package com.easyranktools.callhistoryforanynumber.adapters;
+package com.callos16.callscreen.colorphone.admin.adapters;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -13,9 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.bumptech.glide.Glide;
-import com.callos16.callscreen.colorphone.admin.R;
-import com.callos16.callscreen.colorphone.admin.databinding.ItemAlldataBinding;
+
+import com.callos16.callscreen.colorphone.R;
 import com.callos16.callscreen.colorphone.admin.models.CallHis_DataModel;
+import com.callos16.callscreen.colorphone.databinding.ItemAlldataBinding;
 
 import java.util.ArrayList;
 
