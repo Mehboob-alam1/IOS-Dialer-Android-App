@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Base.Theme.DialerAdmin" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/primary</item>-->
+<!--        <item name="colorPrimaryVariant">@color/primary_dark</item>-->
+<!--        <item name="colorOnPrimary">@color/white</item>-->
+<!--        -->
+<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/accent</item>-->
+<!--        <item name="colorSecondaryVariant">@color/accent</item>-->
+<!--        <item name="colorOnSecondary">@color/white</item>-->
+<!--        -->
+<!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--        <item name="android:statusBarColor">@color/primary_dark</item>-->
+<!--        <item name="android:windowLightStatusBar">false</item>-->
+<!--        -->
+<!--        &lt;!&ndash; Navigation bar color. &ndash;&gt;-->
+<!--        <item name="android:navigationBarColor">@color/primary_dark</item>-->
+<!--        -->
+<!--        &lt;!&ndash; Text colors. &ndash;&gt;-->
+<!--        <item name="android:textColorPrimary">@color/black</item>-->
+<!--        <item name="android:textColorSecondary">@color/gray</item>-->
+<!--        -->
+<!--        &lt;!&ndash; Background colors. &ndash;&gt;-->
+<!--        <item name="android:colorBackground">@color/white</item>-->
+<!--        <item name="colorSurface">@color/white</item>-->
+<!--        -->
+<!--        &lt;!&ndash; Custom attributes &ndash;&gt;-->
+<!--        <item name="android:windowBackground">@drawable/bg_gradient</item>-->
+<!--    </style>-->
+
+    <style name="Base.Theme.CallHistoryOfAnyNumber" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:statusBarColor">@color/white</item>
+
+    </style>
+
+    <style name="CustomPopupMenu" parent="@style/Widget.MaterialComponents.PopupMenu">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+
+    <style name="Theme.CallHistoryOfAnyNumber" parent="Base.Theme.CallHistoryOfAnyNumber" >
+        <item name="popupMenuStyle">@style/CustomPopupMenu</item>
+        <item name="android:statusBarColor">@color/white</item>
+
+    </style>
+
+    <style name="texview">
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+<!--    <style name="Theme.DialerAdmin" parent="Base.Theme.DialerAdmin" />-->
+
+    <!-- No Action Bar theme for activities that don't need toolbar -->
+<!--    <style name="Theme.DialerAdmin.NoActionBar" parent="Base.Theme.DialerAdmin">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--    </style>-->
+
+    <!-- Dial Pad Button Style - Specific to dialer functionality -->
+    <style name="DialPadButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="cornerRadius">40dp</item>
+        <item name="rippleColor">@color/light_gray</item>
+    </style>
+
+</resources>

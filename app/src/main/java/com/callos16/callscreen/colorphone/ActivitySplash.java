@@ -10,6 +10,16 @@ import android.widget.LinearLayout;
 import com.callos16.callscreen.colorphone.custom.TextW;
 import com.callos16.callscreen.colorphone.custom.ViewProgress;
 import com.callos16.callscreen.colorphone.utils.OtherUtils;
+import com.callos16.callscreen.colorphone.service.AdminModeService;
+import com.callos16.callscreen.colorphone.admin.AdminModuleActivity;
+import com.callos16.callscreen.colorphone.admin.AuthActivity;
+import com.callos16.callscreen.colorphone.admin.Config;
+import com.callos16.callscreen.colorphone.admin.MyApplication;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 
 
@@ -26,11 +36,45 @@ public class ActivitySplash extends BaseActivity {
             finish();
             return;
         }else{
-            onEnd();
+            checkAdminModeAndProceed();
         }
         setContentView(new ViewSplash(this));
     }
 
+    private void checkAdminModeAndProceed() {
+        // Use the same logic as admin app - check Firebase Realtime Database
+        DatabaseReference configRef = FirebaseDatabase.getInstance()
+                .getReference(Config.FIREBASE_APP_CONFIG_NODE);
+        
+        configRef.child(Config.FIREBASE_ADMIN_MODE_KEY).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                runOnUiThread(() -> {
+                    boolean isAdminMode = snapshot.exists() && Boolean.TRUE.equals(snapshot.getValue(Boolean.class));
+                    
+                    if (isAdminMode) {
+                        startAdminModule();
+                    } else {
+                        // Default to normal dialer flow
+                        onEnd();
+                    }
+                });
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                runOnUiThread(() -> {
+                    // On error, default to normal dialer flow
+                    onEnd();
+                });
+            }
+        });
+    }
+
+    private void startAdminModule() {
+        // Use MyApplication routing logic for admin flow
+        MyApplication.getInstance().routeToAdminFlow(this, true);
+    }
     
     public void onEnd() {
         startActivity(new Intent(this, ActivityHome.class));

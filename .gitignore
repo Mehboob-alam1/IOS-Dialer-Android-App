@@ -7,3 +7,6 @@
 /build
 /captures
 .externalNativeBuild
+
+# Admin app repository (cloned for integration)
+admin-app/
